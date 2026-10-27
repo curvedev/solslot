@@ -1,0 +1,23 @@
+import http from 'node:http';
+import {readFile} from 'node:fs/promises';
+import {createHandler,serverSettings} from '../src/http-server.js';
+import {loadMainnetSettler} from '../src/mainnet-settler.js';
+import {mainnetGame} from '../src/mainnet-game.js';
+import {mainnetConnection} from '../src/mainnet-spin.js';
+import {createMainnetApi} from '../src/mainnet-api.js';
+import {createSettlementRecovery} from '../src/settlement-recovery.js';
+if(process.env.SOLPOT_MAINNET_LOCKED!=='1')throw Error('Start through the mainnet lock launcher');
+const settings=serverSettings(process.env);
+if(settings.origins.length!==1||settings.origins[0]!=='https://solslot.fun')throw Error('Mainnet is restricted to the official HTTPS origin');
+await mainnetGame.assertNetwork(mainnetConnection());
+const release=JSON.parse(await readFile('dist-mainnet/release.json','utf8'));
+if(!release.deployed||release.program!==mainnetGame.config.gameProgram||release.mint!==mainnetGame.config.mint)throw Error('Website and worker release differ');
+const settler=await loadMainnetSettler();if(!settler)throw Error('Mainnet worker must be configured before opening the site');
+const recovery=createSettlementRecovery({recover:()=>settler.recoverPending()});
+const api=createMainnetApi({settler,origins:settings.origins});
+const server=http.createServer(createHandler({...settings,root:'dist-mainnet',api,health:{status:'ok',network:'mainnet-beta',mainnetEnabled:true}}));
+server.requestTimeout=30000;server.headersTimeout=15000;
+server.listen(settings.port,settings.host,()=>{recovery.start();console.log('SolSlot mainnet service started. Entry admission is checked separately from website health.');});
+let closing=false;
+async function shutdown(){if(closing)return;closing=true;const closed=new Promise(resolve=>server.close(resolve));await recovery.stop();await closed;await settler.drain();process.exit(0);}
+process.on('SIGTERM',shutdown);process.on('SIGINT',shutdown);

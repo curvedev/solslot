@@ -1,0 +1,5 @@
+import {readFile} from 'node:fs/promises';import {createHash} from 'node:crypto';import assert from 'node:assert/strict';
+const sha=bytes=>createHash('sha256').update(bytes).digest('hex'),rows=JSON.parse(await readFile(new URL('./production-source-manifest.json',import.meta.url)));
+assert.equal(rows.length,122);for(const row of rows){assert.ok(!row.path.startsWith('/')&&!row.path.split('/').includes('..'));const bytes=await readFile(new URL('../'+row.path,import.meta.url));assert.equal(bytes.length,row.bytes,'Size differs: '+row.path);assert.equal(sha(bytes),row.sha256,'Hash differs: '+row.path)}
+const config=JSON.parse(await readFile(new URL('../config/mainnet.prepared.json',import.meta.url))),binary=await readFile(new URL('../artifacts/solana_pot_game.so',import.meta.url));assert.equal(binary.length,config.release.binaryBytes);assert.equal(sha(binary),config.release.binarySha256);
+console.log(JSON.stringify({productionSourceFilesVerified:rows.length,binarySha256:sha(binary),transactionsSubmitted:0}));

@@ -1,0 +1,6 @@
+export function resultPresentation(result, preview = false) {
+  const format = n => new Intl.NumberFormat('en-US').format(n);
+  if (result.won) return { tier: 'jackpot', eyebrow: preview ? 'ANIMATION PREVIEW · NO REWARD' : 'THE WHOLE POT IS YOURS', title: 'Jackpot!', amount: `${result.payout.toFixed(3)} SOL`, detail: preview ? 'This previews the jackpot celebration. No tokens spent or rewards awarded.' : `${format(result.burn)} demo $SLOT burned. The full reserved demo pot was paid.`, action: 'Back to the machine' };
+  if (result.reward) return { tier: 'consolation', eyebrow: preview ? 'ANIMATION PREVIEW · NO REWARD' : 'THREE OF A KIND', title: result.burn===0?'Entry back.':'Half back.', amount: `${format(result.reward)} $SLOT`, detail: preview ? 'This previews a token reward. Your balance will stay the same.' : `${format(result.burn)} tokens burned. ${format(result.reward)} tokens added to your rewards, ready to claim.`, action: preview ? 'Back to the machine' : 'View my rewards' };
+  return { tier: 'loss', eyebrow: preview ? 'ANIMATION PREVIEW · NO ENTRY' : 'SPIN COMPLETE', title: 'No match.', amount: `${format(result.burn)} $SLOT burned`, detail: preview ? 'This previews a losing result. No tokens are spent.' : `The ${result.potBefore.toFixed(3)} demo SOL jackpot carries over. Your next spin has the same odds.`, action: 'Back to the machine' };
+}

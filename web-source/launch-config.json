@@ -1,0 +1,17 @@
+{
+  "mode": "demo",
+  "cluster": "solana:devnet",
+  "brandPending": false,
+  "mint": null,
+  "gameProgram": null,
+  "name": "SolSlot",
+  "ticker": "SLOT",
+  "logoStatus": "approved",
+  "uiDirection": "playground",
+  "domain": "https://solslot.fun",
+  "xUrl": "https://x.com/playSolSlot",
+  "launchMode": "pumpfun",
+  "feeSource": "actual-received-creator-fees",
+  "jackpotShareBps": 9000,
+  "treasuryShareBps": 1000
+}

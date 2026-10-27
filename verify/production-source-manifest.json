@@ -1,0 +1,612 @@
+[
+  {
+    "path": ".dockerignore",
+    "bytes": 586,
+    "sha256": "b33236b7d38d0a8049ee439b3f4a945747853d7d5e2258f8fa67b72c96072ff5"
+  },
+  {
+    "path": "artifacts/solana_pot_game.so",
+    "bytes": 208512,
+    "sha256": "90583a2f57289428c628d390652007ed97699c2d97f6cd613483a07ea6793a2d"
+  },
+  {
+    "path": "config/mainnet.prepared.json",
+    "bytes": 6772,
+    "sha256": "6084f3ffd91a11b23475fa86efdfc77cb06ce8c2e0156b9ec4ad6b2cfef7282f"
+  },
+  {
+    "path": "Dockerfile",
+    "bytes": 1298,
+    "sha256": "7e1de02f164320c52564d183f543ed9bc361c47ce950905320482f62b754342d"
+  },
+  {
+    "path": "package-lock.json",
+    "bytes": 91020,
+    "sha256": "b202eff9695d782d24cc7685fef66f43edf87d37faae45319a1502db94e94493"
+  },
+  {
+    "path": "package.json",
+    "bytes": 862,
+    "sha256": "f8536b26b1a41213162eb5a415bbe7f8d6f1ed0a32a83fe13d046a2999a607c0"
+  },
+  {
+    "path": "programs/game-core/src/lib.rs",
+    "bytes": 16999,
+    "sha256": "addf3080e6384de0dbab5d052dcb8d77ec5bb6196d771335221d678e12d06c3b"
+  },
+  {
+    "path": "programs/game-program/src/lib.rs",
+    "bytes": 32591,
+    "sha256": "1fffd26ed9870212d18cc08b6b6661534dc5f1da70632720f7c2ddd7e14ae590"
+  },
+  {
+    "path": "programs/game-program/src/orao.rs",
+    "bytes": 2893,
+    "sha256": "9352eedcb2a853b7bf36764ca16080ae8927d46d6b27fe07acf5b40c4257a913"
+  },
+  {
+    "path": "programs/game-program/src/tokens.rs",
+    "bytes": 8254,
+    "sha256": "7740c598042d8b61a699d9616b389d66ef00a9f6cfd7d2e36a3972df1b1d3044"
+  },
+  {
+    "path": "railway.json",
+    "bytes": 361,
+    "sha256": "1170fc8a28a4863e5e700b636c9487a8cefa8559485d6deb097d5cb2b39bc8d5"
+  },
+  {
+    "path": "scripts/build-mainnet.mjs",
+    "bytes": 3264,
+    "sha256": "b80516bcd32106eff71533ce946aad0e146bbc3b035a5dcca96a82f3b6d3c0c6"
+  },
+  {
+    "path": "scripts/build.mjs",
+    "bytes": 3199,
+    "sha256": "7981ee3a091670a2b952649f77d5aba45d8db82509f4e86c94a6f56b6e3610fd"
+  },
+  {
+    "path": "scripts/fingerprint-assets.mjs",
+    "bytes": 1912,
+    "sha256": "62890e829bc14fc8567b20bfb08f7c9a34b765c5c4b0e5fab13f6c480eedb39c"
+  },
+  {
+    "path": "scripts/hosting-entrypoint.mjs",
+    "bytes": 7494,
+    "sha256": "b4e580c2505231725257bdb0a7e725567303970b91a967e0fad261857b8ca4a0"
+  },
+  {
+    "path": "scripts/mainnet-page.mjs",
+    "bytes": 6065,
+    "sha256": "0d6a5df52782df0836f455f22c25f3758737cc9567ac0a947c945ba12085de0d"
+  },
+  {
+    "path": "scripts/playground-page.mjs",
+    "bytes": 6054,
+    "sha256": "d361a92733fb6b2d5cb76b6e18fbc6403104569d1f2b8de81d0e51837ef105bf"
+  },
+  {
+    "path": "scripts/rules-page.mjs",
+    "bytes": 8499,
+    "sha256": "115d5b138113f552900d0e14197ac4e7a090e8947a2d344b1a36186d52ee73c7"
+  },
+  {
+    "path": "scripts/rules-source.mjs",
+    "bytes": 2723,
+    "sha256": "d68b491af3a1e7d7acb9e19adc9e585030e5163b7ee5caedd26f47cab36a2457"
+  },
+  {
+    "path": "scripts/serve-mainnet.mjs",
+    "bytes": 1944,
+    "sha256": "c69e2e415ff1bec776e9e36bbb177a3a37f0a73e94fb172b4eb151d59aa7be2c"
+  },
+  {
+    "path": "scripts/serve.mjs",
+    "bytes": 988,
+    "sha256": "e32668bb93ea2b23b72dc4709dbdfa4d3ecee9ea377890f237f123524b6e284f"
+  },
+  {
+    "path": "scripts/site-pages.mjs",
+    "bytes": 2320,
+    "sha256": "6e8b06c00368098feabb684a98f4b36e316e45e392686961eda771d1b7069205"
+  },
+  {
+    "path": "scripts/start-mainnet.mjs",
+    "bytes": 1889,
+    "sha256": "ee26b9077efd1451cdcc12e631408168488a73c1a6b144311a7a797ed857be94"
+  },
+  {
+    "path": "src/browser-shim.js",
+    "bytes": 33,
+    "sha256": "f46b45225316755f259a9f922375119d2788b122add8f8afd47fab760083506e"
+  },
+  {
+    "path": "src/confirm-transaction.js",
+    "bytes": 1115,
+    "sha256": "54ecb0a501fd37436d417a0a7c068720680fc30a40d07700ada9d7f84e784f32"
+  },
+  {
+    "path": "src/devnet-api.js",
+    "bytes": 4199,
+    "sha256": "f1ad9149e9fc08ffed9ceb1c4c883b7b2b9dd8462fe09aef7d0d5e66609e8e52"
+  },
+  {
+    "path": "src/devnet-client.js",
+    "bytes": 11462,
+    "sha256": "441890920bcec0b19487dba6fcd31b111ec1ef51aa255a9fd7c664ef2eba2662"
+  },
+  {
+    "path": "src/devnet-reveal.js",
+    "bytes": 829,
+    "sha256": "7c83c1581de656e21106c348de2806fb1e8be7d6e4306cfd1580e82d0c2a4af8"
+  },
+  {
+    "path": "src/devnet-rpc.js",
+    "bytes": 1976,
+    "sha256": "fe74d5fbe16c00020566737673efbd10a1e5e550051c408921000e9ec13f86da"
+  },
+  {
+    "path": "src/devnet-session-sponsor.js",
+    "bytes": 3024,
+    "sha256": "67111f4a7ce543f0ca9f07c484ea24d3fab78ba73eab090ab37b915a4486cd05"
+  },
+  {
+    "path": "src/devnet-settler.js",
+    "bytes": 11260,
+    "sha256": "9e3806af41dad4d43ea5cff5641425d040f7cfa594777bc06e89ac80d61bada6"
+  },
+  {
+    "path": "src/devnet-spin.js",
+    "bytes": 9503,
+    "sha256": "c7bd078756fe66f311fafa58c442bea5abf40e064b03923549bbe98c935edb7a"
+  },
+  {
+    "path": "src/http-json.js",
+    "bytes": 495,
+    "sha256": "c937995836c7e1a35eb079111a4d82b13c519d09c1a0b742a6fe150549a29da8"
+  },
+  {
+    "path": "src/http-server.js",
+    "bytes": 4450,
+    "sha256": "02f86a5c8a7b4160b9d469f82820970dbf4b497975f0fb0c0ca7a7c85b4c00a3"
+  },
+  {
+    "path": "src/launch-common.js",
+    "bytes": 1828,
+    "sha256": "44e4e5ff6eda126feb45047a996f6632634eb411334f1aa4b9cdc318eb131009"
+  },
+  {
+    "path": "src/launch-review-id.js",
+    "bytes": 626,
+    "sha256": "ecd8113d838562d90bebbebb076822b0b3a225638a64f36ec35971f34d284829"
+  },
+  {
+    "path": "src/lever-gesture.js",
+    "bytes": 1030,
+    "sha256": "9ada6a0615771852fd81f835e16e7251dca3362dd7516eba13ceec2ab2024439"
+  },
+  {
+    "path": "src/mainnet-api.js",
+    "bytes": 2773,
+    "sha256": "55bd387728f5dee5d3979968ca7182c5fb05bbf71b71b1a59a378fa9f7f377c7"
+  },
+  {
+    "path": "src/mainnet-draft.js",
+    "bytes": 5111,
+    "sha256": "3e43463959293ec28ed1b738b08afc3322825198c9c3a9a4a38488de22a8f587"
+  },
+  {
+    "path": "src/mainnet-game.js",
+    "bytes": 8041,
+    "sha256": "c247bdaf5a55aee9535a8e96a41502286c281da0d010eb9b9a51bd1480402a10"
+  },
+  {
+    "path": "src/mainnet-launch-status.js",
+    "bytes": 2842,
+    "sha256": "a025380af635a96577e1af0b4736601bdac3ebcd2f43e91b72983021f01fc1af"
+  },
+  {
+    "path": "src/mainnet-launch-worker.js",
+    "bytes": 5305,
+    "sha256": "5c6091dbb9100b4fae5f6418adaca43cf50b5d098ff76be5a6aac567a086910e"
+  },
+  {
+    "path": "src/mainnet-live.js",
+    "bytes": 367,
+    "sha256": "0d4d3170f0f7c9a057670945556689bc84841fce10a9576cefc34683348332ec"
+  },
+  {
+    "path": "src/mainnet-playground.js",
+    "bytes": 1095,
+    "sha256": "3673c42a3e3c26a58a1d55d875ea224047a1c1497cfcad4dbd06cf1c5f3b0e6f"
+  },
+  {
+    "path": "src/mainnet-release.js",
+    "bytes": 436,
+    "sha256": "57cf5e07d430190a8aadf927eaa9f6f80917cc82276e76873696c6055b081b1d"
+  },
+  {
+    "path": "src/mainnet-rpc.js",
+    "bytes": 418,
+    "sha256": "116ec42d00a5ca2621d53adc398febdc676057a294b832e12203ea35b9c432ca"
+  },
+  {
+    "path": "src/mainnet-settler.js",
+    "bytes": 17907,
+    "sha256": "2bb9c9742dc24e4733cd2c104e254b3a7d3ca8bd26caec5d702567c501df91d9"
+  },
+  {
+    "path": "src/mainnet-spin.js",
+    "bytes": 2619,
+    "sha256": "4a669d700cdc344fe57a24256406aefedfb115da737c03bbcf9d769683444d38"
+  },
+  {
+    "path": "src/meteora-launch.js",
+    "bytes": 16315,
+    "sha256": "9051364efa825b40b9a79b04c063c75b32c1a16d9ed21df07ef96004c8f2909a"
+  },
+  {
+    "path": "src/oracle-proof-store.js",
+    "bytes": 8483,
+    "sha256": "4a8c12f425ba0045c16940ff47c40eac0c462f291e767483783acbad916563d9"
+  },
+  {
+    "path": "src/orao-admission.js",
+    "bytes": 2930,
+    "sha256": "44585bb6d550a21b33c52ecd5e7b7cf6a024e7f7e23a3dbbff8ae3114b4ca9c7"
+  },
+  {
+    "path": "src/orao-probe.js",
+    "bytes": 3517,
+    "sha256": "9bc98fe69525e46a166360af2a2f2853f780c6b2d1f9fc16c5ba60ea3d76fc1d"
+  },
+  {
+    "path": "src/orao-spin.js",
+    "bytes": 5752,
+    "sha256": "38278d01dcb994cf75c183bf1443b2419c5a3b0000ed3538334253f810fc9204"
+  },
+  {
+    "path": "src/orao-vrf.js",
+    "bytes": 3058,
+    "sha256": "233e7dc227016e84ff2e516d8853bc17ac443dd08a63c9d4bb33abbe4fdc57ab"
+  },
+  {
+    "path": "src/play-session.js",
+    "bytes": 3714,
+    "sha256": "51b11a644335724935e8a7eb1bfe828e31647f586205fb68bec66ce8b8908b4e"
+  },
+  {
+    "path": "src/playground-game.js",
+    "bytes": 18219,
+    "sha256": "5a778d6e73405a89aba39ba9f40e3b5d44a371abc6d9fe3b195f3f0a48084254"
+  },
+  {
+    "path": "src/playground-live.js",
+    "bytes": 74,
+    "sha256": "4f8edb653866f4d44dd856b3f3f096e9501cb10d81abbe86780a2691eee051ca"
+  },
+  {
+    "path": "src/playground-runtime.js",
+    "bytes": 30490,
+    "sha256": "30d1278c227a87e7411e9ca040ed17aa560a4605e8560736f9f5bd2d247ac1db"
+  },
+  {
+    "path": "src/playground-scene.js",
+    "bytes": 7537,
+    "sha256": "13b2f8e53d5831b6b8803059b6c74c352481d0e8f9a7afe51ed716722fa646dc"
+  },
+  {
+    "path": "src/prelaunch-broadcast.js",
+    "bytes": 6539,
+    "sha256": "378ba95d6d3315b9849ce094228adba7740a177b5b88f5a800e7704d63cbe71d"
+  },
+  {
+    "path": "src/prelaunch-coordinator.js",
+    "bytes": 4051,
+    "sha256": "955a5c98c7a9ba5cde242aff18c7dd3378d7cd2fe88e3003dc197dcb20f79895"
+  },
+  {
+    "path": "src/prelaunch-fees.js",
+    "bytes": 4482,
+    "sha256": "9965c136d925af385a7c019e175b5a7ade173d2a9ffc39b5c96a4d9a277da737"
+  },
+  {
+    "path": "src/prelaunch-game.js",
+    "bytes": 2009,
+    "sha256": "96e17c46271219dd836132435028df342b61dbd3076ae9420237b713e16aa25a"
+  },
+  {
+    "path": "src/prelaunch-readiness.js",
+    "bytes": 4965,
+    "sha256": "c97b5ff06b2244c4fcb354d547f687351107a92cc51c16d8f9dd16b0729e429f"
+  },
+  {
+    "path": "src/pump-fees.js",
+    "bytes": 4725,
+    "sha256": "9d3bb71aa01e7e638531efa133c0176426f5a5c377fae617bd4ad0f5724a71c2"
+  },
+  {
+    "path": "src/ready-reveal.js",
+    "bytes": 4752,
+    "sha256": "ebbd08987c92a683ba61674381d5f289e64fee792214a158a98d24f6ffb758e2"
+  },
+  {
+    "path": "src/rules-upgrade.js",
+    "bytes": 1560,
+    "sha256": "3ea4b1c9b69f2738b69f7306e304ace043b909e52b77935549171dc10d3d73c0"
+  },
+  {
+    "path": "src/scene.js",
+    "bytes": 24047,
+    "sha256": "996b6167634a93382dd3b405bcd6474d56da3874201f4de5d002c238629144e9"
+  },
+  {
+    "path": "src/settlement-recovery.js",
+    "bytes": 2227,
+    "sha256": "bb4512e5b32035d39f852ceffb827e57562eaf59b40bbbb5bd5279166bb1d921"
+  },
+  {
+    "path": "src/solana-game.js",
+    "bytes": 16138,
+    "sha256": "5835489a6273138f921520ea92b913b32f535ba07d10006cb839882c59b7116f"
+  },
+  {
+    "path": "src/solana-launch.js",
+    "bytes": 16188,
+    "sha256": "ad142784f2cc89e2e42ef472c97be73f52b73b94b50c43ceeef95eaf3775b0d8"
+  },
+  {
+    "path": "src/solana-oracle.js",
+    "bytes": 5014,
+    "sha256": "b222e60e561da1c43565b11bf67174cc6d69e239107f7f0089641bc8db2ec5a9"
+  },
+  {
+    "path": "src/solana-tokens.js",
+    "bytes": 2276,
+    "sha256": "c6e1e6c60783c11ce4e8952d104d212b5bfbc857e7d3801a0cb93a61cb7ba40d"
+  },
+  {
+    "path": "src/spin-batch.js",
+    "bytes": 2613,
+    "sha256": "e57c8442b570a06470a355aefd36c52dbe24e8327cfe60d79459a396e96253c0"
+  },
+  {
+    "path": "src/standard-devnet-wallet.js",
+    "bytes": 2553,
+    "sha256": "618dba3e85f8a2d3cd95ffb2aef43354b67aa4657db6417d5cbc581cf119afc9"
+  },
+  {
+    "path": "src/static-assets.js",
+    "bytes": 3683,
+    "sha256": "c3245db107eea1455f52c47d9d63cf842a5df7cda0c42b495d642be71c4eb54f"
+  },
+  {
+    "path": "src/transaction-simulation.js",
+    "bytes": 722,
+    "sha256": "3956f6fdd63f043350ff3c77d85960f198decd4d349a909322b5c2c7771bad43"
+  },
+  {
+    "path": "src/wallet-discovery.js",
+    "bytes": 4004,
+    "sha256": "0cb30b55167d691aad5300223e9649f58547f25a9d90726690fa96418c79005b"
+  },
+  {
+    "path": "web-source/app.js",
+    "bytes": 27935,
+    "sha256": "b2720e3666aa0f9802d71770122ab7b294d7034a0e11bc4411764018ff2ae088"
+  },
+  {
+    "path": "web-source/asset-credits.txt",
+    "bytes": 4529,
+    "sha256": "ddf846380e8d744b828f3679795450d93dfe3bfa54692c7ad0f4a81ec8c214f9"
+  },
+  {
+    "path": "web-source/assets/fonts/LilitaOne-OFL.txt",
+    "bytes": 4392,
+    "sha256": "255d5debbb80eb2ea762644311f266a279e8778f00156655a516e2b7781a63e1"
+  },
+  {
+    "path": "web-source/assets/fonts/LilitaOne-Regular.ttf",
+    "bytes": 28092,
+    "sha256": "f5b641c45c69d772ee4eda687bc9fda411d5cad6b0b45371491da4580cbc8d59"
+  },
+  {
+    "path": "web-source/assets/fonts/LilitaOne-Regular.woff2",
+    "bytes": 11940,
+    "sha256": "6d6f545f6c1a77dcf3457ef13fd6c15deef42cdcc4d2f7a16375548f1f5e7938"
+  },
+  {
+    "path": "web-source/assets/fonts/NunitoSans-OFL.txt",
+    "bytes": 4393,
+    "sha256": "efbb0c9e864cef973982d9a17567e6be5c3d1759695574586f3f18c7ecca064b"
+  },
+  {
+    "path": "web-source/assets/fonts/NunitoSans-Variable.ttf",
+    "bytes": 571240,
+    "sha256": "f934d7142fb4784bf828da485b7dcbd90c0c80d514e9d49a5da0ed3a1ae2491d"
+  },
+  {
+    "path": "web-source/assets/fonts/NunitoSans-Variable.woff2",
+    "bytes": 208972,
+    "sha256": "f92ca00cd2c7331c4a219a9b0feac7345151a36be8823c8e70d019e59b28e63c"
+  },
+  {
+    "path": "web-source/assets/jackpot-sky.jpg",
+    "bytes": 304988,
+    "sha256": "ef72218aab755666f74e2c281f8414cb0b52d0c405e96d025f134c07eae9dc4b"
+  },
+  {
+    "path": "web-source/assets/optimized/background.webp",
+    "bytes": 103574,
+    "sha256": "1968aad32304cba7ee305fe95387fbdd8957a080ccb19e0955dd79c73a592b4e"
+  },
+  {
+    "path": "web-source/assets/optimized/doge.webp",
+    "bytes": 12708,
+    "sha256": "c0253099820a103468077e5e39549071f2486807b0ca249c105b17bee76ddc90"
+  },
+  {
+    "path": "web-source/assets/optimized/machine.webp",
+    "bytes": 194320,
+    "sha256": "41abe92be2ba2b11d631869cfdbc6761c7c560b967873bb4a92036165d6262e0"
+  },
+  {
+    "path": "web-source/assets/optimized/pepe.webp",
+    "bytes": 12654,
+    "sha256": "d1c2aa9207f3a46109aa4865e5490bbd4062d4b51d1a51c491deb9c19ed2535f"
+  },
+  {
+    "path": "web-source/assets/optimized/solana.webp",
+    "bytes": 41898,
+    "sha256": "a59101ce6faa77384a12bc56ef0c9039dbb54d1cc522a14a577b2f11169a3e92"
+  },
+  {
+    "path": "web-source/assets/optimized/solslot-logo.webp",
+    "bytes": 42924,
+    "sha256": "45ded2e511c0c4a3b992f98783ed94aa676a78f24efd8641d98325d534f9d322"
+  },
+  {
+    "path": "web-source/assets/playground-background.png",
+    "bytes": 1437207,
+    "sha256": "d160b47583a13a6ab0bf578056519784ba65015c7dd163874a40aa4c07649534"
+  },
+  {
+    "path": "web-source/assets/reels/bitcoin.svg",
+    "bytes": 1498,
+    "sha256": "b014fc93884b416f1ba5d95968a671700707d874b9353327b7c857d427893c6c"
+  },
+  {
+    "path": "web-source/assets/reels/doge.png",
+    "bytes": 28646,
+    "sha256": "39c02b48006a5967e032d35ee0298ea109e5b64a635a9f9cfb55cfab2d348fac"
+  },
+  {
+    "path": "web-source/assets/reels/pepe.png",
+    "bytes": 26085,
+    "sha256": "4149023252f79242b6d509eb610af302147224852e4ec1032c62a65506be0f15"
+  },
+  {
+    "path": "web-source/assets/reels/pumpfun.svg",
+    "bytes": 2653,
+    "sha256": "2c72b8e06bbd7be8823c2cce4bbe652ba7a36e35074b8a1b27fd668304816379"
+  },
+  {
+    "path": "web-source/assets/reels/solana-jackpot.png",
+    "bytes": 1241256,
+    "sha256": "425d45066978db4af0de33b9c7f8c0d9f3aaa30adf7bb36590f0307b4dd0915a"
+  },
+  {
+    "path": "web-source/assets/solpot-machine-display.png",
+    "bytes": 1411797,
+    "sha256": "6cefdb5ad8335e320cbd8707310aa058eaac230319935ddb43e6a8d7fa71149f"
+  },
+  {
+    "path": "web-source/assets/solslot-logo.png",
+    "bytes": 1778553,
+    "sha256": "5ba1a453685882147137a5499ec98a25806808a08a22e3c43071e34b2d6cfc3a"
+  },
+  {
+    "path": "web-source/audio.js",
+    "bytes": 5883,
+    "sha256": "2ab9fe5d01d95f10ab0f71134fd8e1eb03501f02f202c83db20c399735e61e11"
+  },
+  {
+    "path": "web-source/bootstrap.js",
+    "bytes": 708,
+    "sha256": "a64326f0a81b496e7e1560d905321243545a3b7d2f176367b60b51b558aca389"
+  },
+  {
+    "path": "web-source/devnet.css",
+    "bytes": 1948,
+    "sha256": "8a8f0d935f5dad5f4b5476fb401f07c880a45ab1c45198a43e09dcb4a882a735"
+  },
+  {
+    "path": "web-source/devnet.html",
+    "bytes": 4232,
+    "sha256": "b79db0a6490c4d496ed3b96762d4cb7d5fe79a913cb4b6a178679fb8f31b0d9d"
+  },
+  {
+    "path": "web-source/engine.js",
+    "bytes": 5639,
+    "sha256": "06e5dddb206600da0209d218d2f4077efec9b84c611068d3afaf6c42d0588703"
+  },
+  {
+    "path": "web-source/index.html",
+    "bytes": 23997,
+    "sha256": "9ec497f67eb2b98029864ec60d12c16157d792967f6255752a34af3d62c7dde7"
+  },
+  {
+    "path": "web-source/launch-config.json",
+    "bytes": 418,
+    "sha256": "921cbf72e40e8bfce6355b8909b33ccee51af0b551b88879faa83c070a060404"
+  },
+  {
+    "path": "web-source/layout.js",
+    "bytes": 2599,
+    "sha256": "9b01d614e40be7682f5604f39e34f3c53c154429c55e6a11aa43780f44b5c2b4"
+  },
+  {
+    "path": "web-source/metadata/solslot.json",
+    "bytes": 309,
+    "sha256": "f5063d277c17d7a557711faf9f20bf4d729a2d39585d4deb18c23fbf0e84ba59"
+  },
+  {
+    "path": "web-source/odds-lab.js",
+    "bytes": 9710,
+    "sha256": "6aa3ab839547637e42628fbe52a9b7edad4624ad9dd8f9f4a35dc87f964713bf"
+  },
+  {
+    "path": "web-source/outcomes.js",
+    "bytes": 661,
+    "sha256": "7d85e5a29a9ac7d80c148464fa322b04b8d54f3d0adadf9101440a03dde33c14"
+  },
+  {
+    "path": "web-source/playground-live.css",
+    "bytes": 2950,
+    "sha256": "b1e8412c17d4f075d34af6a640bcd4b8f90b47dc072435cfa84f130672873f68"
+  },
+  {
+    "path": "web-source/playground.css",
+    "bytes": 40826,
+    "sha256": "9acc08f4c09d103c31ddbe1e824940db753737ffe3333171a66c2496cdf9500c"
+  },
+  {
+    "path": "web-source/presentation.js",
+    "bytes": 1375,
+    "sha256": "f51660518b7e1aa2482ad3d4693740be6299f8a95f2ee092fb6daf83b3292670"
+  },
+  {
+    "path": "web-source/price.js",
+    "bytes": 1821,
+    "sha256": "4b4ab0c27c0e94f68f1f15080736c9c1c1ea3904f60480bb5edfe50baf657a23"
+  },
+  {
+    "path": "web-source/rules.css",
+    "bytes": 7599,
+    "sha256": "8e4f0c907993e2cc327abf224543761a30745f6783124d702f9cb189e2781863"
+  },
+  {
+    "path": "web-source/solana-wallet.js",
+    "bytes": 4740,
+    "sha256": "53c08ed48206ac7ca1e8371f5c1c8212350272d18c74579580d8aa77b74a2f51"
+  },
+  {
+    "path": "web-source/styles.css",
+    "bytes": 60574,
+    "sha256": "1aa08dc739b075966c84a32b8342dd1183ae2b167d65bee70e93330973447401"
+  },
+  {
+    "path": "web-source/symbols.js",
+    "bytes": 1329,
+    "sha256": "9c7b4f0fe792196e44ae2276f49641559c0f755450b260bb2a1f663717c5f1b2"
+  },
+  {
+    "path": "web-source/THIRD_PARTY_NOTICES.txt",
+    "bytes": 1082,
+    "sha256": "97de7ac302052bcea7f20e5ae89635c10e049614f56409288d554d63fceb614f"
+  },
+  {
+    "path": "web-source/treasury.js",
+    "bytes": 1436,
+    "sha256": "62ee8c448a8448c68f515093a2ee209ba5c967f80e79e7ed41abca77b08f8115"
+  }
+]

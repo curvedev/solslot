@@ -1,0 +1,60 @@
+# Reel symbol source credits
+
+These downloaded symbols are for the owner-only simulated prototype. The files are authentic existing graphics, not generated logo imitations. No commercial clearance is claimed. Logo use must not imply sponsorship or endorsement.
+
+## Bitcoin — bitcoin.svg
+
+- Source page: https://commons.wikimedia.org/wiki/File:Bitcoin.svg
+- Image: https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg
+- Original Bitcoin logo by Bitboy; this standalone version is listed as Grayliptrot and derived from Bitcoin logo.svg.
+- Wikimedia marks the geometric logo as public domain (PD-textlogo). Trademark or other restrictions may still apply. Attribution is retained here for provenance.
+- SVG: 64 × 64 nominal pixels, scalable. Source SVG was inspected: only vector paths and a group transform, with an Inkscape creation comment; no embedded personal metadata, scripts, or external linked images.
+
+## Pepe — pepe.png
+
+- Source page: https://www.stickpng.com/img/memes/pepe-the-frog/happy-pepe-feelsgoodman
+- Image: https://assets.stickpng.com/images/5845cd430b2a3b54fdbaecf8.png
+- Pepe the Frog character created by Matt Furie. Specific cutout uploader/derivative author is not stated by this source.
+- StickPNG explicitly limits the download to personal use and prohibits commercial use. It states the depicted characters remain copyrighted by their respective authors. No broader license was verified.
+- PNG: 1024 × 1024, transparent, recognizable smiling Pepe head.
+
+## Doge — doge.png
+
+- Source page: https://www.stickpng.com/img/memes/doge/doge-head
+- Image: https://assets.stickpng.com/images/5845e69dfb0b0755fa99d7ef.png
+- Depicts Kabosu, the original Doge meme dog; original photograph associated with Atsuko Sato. Specific cutout author is not stated by this source.
+- StickPNG explicitly limits the download to personal use and prohibits commercial use. It states depicted content remains copyrighted by its respective authors. No broader license was verified.
+- PNG: 255 × 306, transparent head cutout; suitable at the small reel-symbol display size.
+
+## File inspection
+
+The inherited PNGs and a rendered thumbnail of the Bitcoin SVG were visually inspected. PNG chunks were enumerated for text, compressed text, international text/XMP, EXIF, and timestamps; none of those chunks were present. Remaining chunks contain image pixels, palettes, transparency, and optional standard color/gamma information. No identity from the local computer was added. Necessary third-party provenance is preserved above.
+
+## pump.fun — pumpfun.svg
+
+- Source page: https://pump.fun/
+- Image: https://pump.fun/pump-logomark.svg
+- Official pump.fun logomark, downloaded on 2026-10-01 and used unchanged at the project owner’s request as a reel symbol.
+- SVG: 200 × 200 nominal pixels, transparent. Inspected XML contains only the root SVG and five vector paths; no scripts, external references, comments, or embedded metadata.
+- The earlier P badge is unused.
+
+## SolSlot logo — assets/solslot-logo.png
+
+Pink and gold slot-machine emblem supplied by the project owner on 2026-10-07. Pixel data and transparency are preserved; embedded EXIF metadata was removed before publishing. No artist attribution is inferred.
+
+## Solana jackpot symbol — assets/reels/solana-jackpot.png
+
+Standalone gold and pink three-bar Solana emblem derived from the supplied logo with the built-in image-generation tool. Used for all jackpot reel matches. Its prompt and provenance are recorded in docs/logo-generation.json.
+
+## Playground artwork
+
+The sky-blue and pink environment in assets/playground-background.png and the transparent cabinet in assets/solpot-machine-display.png were created using the built-in image-generation tool from the selected Playground concept. The upper marquee is an empty gold-framed display for live jackpot numbers. The reels, lever, buttons and balances are live HTML/CSS. No artist attribution is claimed.
+
+## Typefaces — assets/fonts/
+
+Lilita One and Nunito Sans are distributed under the SIL Open Font License 1.1. Original copyright and license notices are retained in LilitaOne-OFL.txt and NunitoSans-OFL.txt. Font files are served locally; no Google Fonts runtime request is made.
+
+- Lilita One: https://github.com/google/fonts/tree/main/ofl/lilitaone
+- Nunito Sans: https://github.com/google/fonts/tree/main/ofl/nunitosans
+
+Optimized WebP artwork and WOFF2 fonts are derived from the supplied project assets; the original artwork and font license notices remain applicable.

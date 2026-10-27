@@ -1,0 +1,23 @@
+.chain-toolbar{max-width:1240px;margin:0 auto 12px;padding:8px 16px;display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;color:#0b1748;font-size:12px;background:#ffffffd9;border-radius:16px}.chain-toolbar strong{letter-spacing:.06em;color:#a52a70}.chain-toolbar a{color:#9b2865}.chain-toolbar button{font-size:12px}.transaction-details{display:grid;gap:10px}.transaction-details>div{display:grid;grid-template-columns:100px 1fr;gap:10px}.transaction-details dt{font-weight:700}.transaction-details dd{margin:0;overflow-wrap:anywhere;font-size:13px}#transaction-dialog{max-width:570px;width:calc(100% - 32px)}/* The physical display scales with its cabinet, never the viewport. */
+body[data-network=devnet] .machine-display-values>div:nth-child(2) strong{font-size:3.2cqw}#wallet-status{overflow-wrap:anywhere}
+@media(max-width:600px){.chain-toolbar{margin:0 12px 12px;gap:8px;font-size:11px}.transaction-details>div{grid-template-columns:1fr;gap:2px}}
+
+body[data-network=devnet] .pack-status{min-height:3em}
+/* Keep prepaid management in the sidebar, outside the machine height budget. */
+body[data-network=devnet] .prepaid-actions{min-height:64px;box-sizing:border-box}
+body[data-network=devnet] .prepaid-actions.is-empty{visibility:hidden;pointer-events:none}
+body[data-network=devnet] .pack-status{height:4.5em;min-height:4.5em;overflow:auto}
+
+body[data-network=devnet] .playground-rewards .prepaid-actions{margin:8px 5px 0;padding:10px;box-shadow:none;background:#fff5fb}
+/* Pack summaries stay scrollable, including ten results on a short laptop. */
+.outcome-dialog[data-batch=true]{width:min(620px,calc(100vw - 28px));max-height:90svh;overflow:auto}
+.outcome-dialog[data-batch=true] .outcome-shell{padding:30px 24px 24px}
+.outcome-dialog[data-batch=true] .outcome-amount{font-size:clamp(20px,4vw,30px);line-height:1.2}
+.batch-results{list-style:none;margin:20px 0 12px;padding:0;display:grid;gap:8px;max-height:min(43svh,440px);overflow:auto;text-align:left}
+.batch-results li{display:grid;grid-template-columns:22px 66px minmax(0,1fr) minmax(80px,auto);gap:10px;align-items:center;padding:12px 10px;border:1px solid #e6dfe9;border-radius:14px;background:#fff}
+.batch-results li[data-tier=consolation]{background:#fff0f8;border-color:#f5b8d7}
+.batch-results li[data-tier=jackpot]{background:#fff4c9;border-color:#e8ba42}
+.batch-order{font-size:11px;font-weight:900;color:#82728c}
+.batch-symbols{display:flex;align-items:center;gap:3px}.batch-symbols img{width:20px;height:28px;object-fit:contain}
+.batch-result-name{font-size:13px;font-weight:850;color:#271a48}.batch-reward{font-size:11px;text-align:right;color:#a52a70}
+@media(max-width:480px){.outcome-dialog[data-batch=true] .outcome-shell{padding:28px 14px 20px}.batch-results li{grid-template-columns:18px 54px minmax(0,1fr) 84px;gap:6px;padding:10px 7px}.batch-symbols img{width:16px;height:24px}.batch-result-name{font-size:11px}.batch-reward{font-size:10px}}

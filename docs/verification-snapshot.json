@@ -1,0 +1,38 @@
+{
+  "snapshotCheckedAt": "2026-10-27T03:56:42.444Z",
+  "website": "https://solslot.fun",
+  "launchReviewId": "3301382abb602b2217594eff23996bc0da0495a5348a8f5cdbf083a1e82053fa",
+  "gameProgram": "BBHgCoTRcop7txYHAAyBNvv5cVmVATppvFfaTXkp9QL9",
+  "plannedMint": "FuuTBe4PPsWH57Z6HfqxxMHPUuiHefd7WKUcLcz1SLoT",
+  "mintExistedAtCheck": false,
+  "binarySha256": "90583a2f57289428c628d390652007ed97699c2d97f6cd613483a07ea6793a2d",
+  "binaryBytes": 208512,
+  "programPinsVerified": 10,
+  "publishedJavaScriptTests": {
+    "passedLocally": 9,
+    "scope": "Mocked launch orchestration, admission, release identity and browser status validation; no player transaction or oracle quorum is executed by these tests."
+  },
+  "earlierInternalSuite": {
+    "checkedDate": "2026-10-23",
+    "passed": 297,
+    "scope": "Historical internal test result; not all internal test harnesses are included in this source snapshot."
+  },
+  "oracleHealthRequest": {
+    "checkedAt": "2026-10-23T13:13:38.792Z",
+    "request": "67CbaM1ytPDivB24HmcdRvoyuWxPPfaVqAZj6GrViCYA",
+    "requestSignature": "5yCDnokKNQhJsj5hxx6nVCLTUHDhNyjuQWgfu7zNHXKrKT7sBDme6jfCTwrgZD3PA9fZ8xNqpM4dR5Ajzbr2sgY2",
+    "refundSignature": "2CnSEEwRuRY4tRgKA7aH79JnkGpEHgWgibmMiMG98Fry4ru7SUVRuUSJq7z4UBHeyamxoLjDwgd91MnUve3YGYZi",
+    "fulfilled": true,
+    "finalizedRefundVerified": true,
+    "liveOracleAdmissionVerified": true,
+    "mainnetTransactionsSubmitted": 1,
+    "grossDebitLamports": 4960160,
+    "refundedLamports": 3108960,
+    "netCostLamports": 1851200,
+    "automationBalanceLamports": 18148800,
+    "playerEntriesSubmitted": 0
+  },
+  "independentAudit": false,
+  "reproducibleBinaryBuildProven": false,
+  "note": "A health request is not a player entry or a player payout. On-chain state can change after this snapshot."
+}

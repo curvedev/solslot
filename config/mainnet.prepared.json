@@ -1,0 +1,169 @@
+{
+  "mode": "mainnet-preparation",
+  "name": "SolSlot",
+  "ticker": "SLOT",
+  "domain": "https://solslot.fun",
+  "xUrl": "https://x.com/playSolSlot",
+  "owner": "9vTBKH79nsZ8fwLhLRPAjECKk4mASTa5mwUPkNpAjtRE",
+  "treasury": "En1qbTpmpGG1CChPrftLrcDN15hY9ZKfoYceG1wSVas4",
+  "automation": "F49Wx6VGU4sxFejCXhBA2iUTrUDDuiD8YnQdCnfZvMfw",
+  "mint": "FuuTBe4PPsWH57Z6HfqxxMHPUuiHefd7WKUcLcz1SLoT",
+  "gameProgram": "BBHgCoTRcop7txYHAAyBNvv5cVmVATppvFfaTXkp9QL9",
+  "quoteAsset": "SOL",
+  "launchMode": "pumpfun",
+  "jackpotShareBps": 9000,
+  "treasuryShareBps": 1000,
+  "entryTokens": "50000",
+  "consolationTokens": "50000",
+  "executionEnabled": false,
+  "logo": "web-source/assets/solslot-logo.png",
+  "metadataUri": "https://solslot.fun/metadata/solslot.json",
+  "totalSupply": null,
+  "decimals": 6,
+  "initialPrizeFundingLamports": "0",
+  "initialPrizeFundingSource": "Collected project trading fees; spins require a funded pot",
+  "nonrecoverableCostReviewThresholdLamports": "100000000",
+  "refundableDepositsAccepted": true,
+  "depositApprovalCondition": "Recoverable by the dev after shutdown and settlement of all player liabilities",
+  "hostingProvider": "Railway",
+  "supportContact": null,
+  "logoApproved": true,
+  "uiDirection": "playground",
+  "hostingStatus": "dns-configured-prelaunch-staging",
+  "tokenProgram": "token-2022",
+  "pumpfun": {
+    "migration": "PumpSwap",
+    "feePolicy": "platform-defined",
+    "feeSource": "actual-received-creator-fees",
+    "creatorFeeRecipient": "9vTBKH79nsZ8fwLhLRPAjECKk4mASTa5mwUPkNpAjtRE",
+    "sharingConfig": null,
+    "feeRouting": "dev-owned-wsol",
+    "mayhemMode": false,
+    "cashback": false,
+    "holderReward": false,
+    "initialBuyLamports": "0",
+    "graduatedLiquidity": "pump-protocol-burns-lp-tokens",
+    "gameToken2022CompatibilityVerified": false,
+    "creatorFeeRoutingVerified": false,
+    "tokenCreation": "owner-launcher",
+    "externalMintConfirmed": true,
+    "externalMintStatus": "Owner supplied this planned CA. Address is valid and unused on mainnet as of the latest check; verify token properties and creator-fee rights after launch.",
+    "externalMintOnChainVerified": false,
+    "creatorFeeSweeps": true
+  },
+  "xDeferredUntilAfterDeployment": false,
+  "cluster": "solana:mainnet",
+  "randomness": "DupZZkV1yv7EFkchaGe58awgqpfByA7C4TAacfisFADa",
+  "oracleProgram": "VRFzZoJdhFWL8rkvu87LpKM3RbcVezpMEc6X5GVDr7y",
+  "queue": "5ER1oENnV4srxYdAynUfRzWeQCPQaqMiAp4VqyMbSqnK",
+  "batchSpins": true,
+  "release": {
+    "status": "prelaunch-armed",
+    "entriesEnabled": true,
+    "binaryBytes": 208512,
+    "binarySha256": "90583a2f57289428c628d390652007ed97699c2d97f6cd613483a07ea6793a2d",
+    "programDeployed": true,
+    "devAuthorityVerified": true
+  },
+  "mainnetAutomationApproved": true,
+  "prelaunch": {
+    "enabled": true,
+    "requireHealthySetup": true,
+    "ownerChecklist": {
+      "programAuthorityTransferRequired": false,
+      "xProfilePending": false,
+      "xProfileStatusNote": "Official project X profile received: https://x.com/playSolSlot"
+    },
+    "programPins": [
+      {
+        "address": "BBHgCoTRcop7txYHAAyBNvv5cVmVATppvFfaTXkp9QL9",
+        "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+        "executable": true,
+        "bytes": 36,
+        "dataSha256": "1fcdc28c049543570af693f4f8f53570646dcf2bfb9f5ebb9f7fd72e736e06d7"
+      },
+      {
+        "address": "81QRXGCpVKgnbVPgfDfy85ATR2a3qTK7M52x7DjQR5vh",
+        "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+        "executable": false,
+        "bytes": 208557,
+        "dataSha256": "15dcca7163a46e24e0641598701cccaa9981d63ddef8e93a1ab5725783c9fa66"
+      },
+      {
+        "address": "6EF8rrecthR5Dkzon8Nwu78hRvfCKubJ14M5uBEwF6P",
+        "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+        "executable": true,
+        "bytes": 36,
+        "dataSha256": "8101492b544ce08703d5de95363bf796e7e4cd17d03639cfe603071fb59652eb"
+      },
+      {
+        "address": "B5MvUwXdiW1NMM6QFFD3ssPKBujD4zMohncbM73Z2BQu",
+        "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+        "executable": false,
+        "bytes": 10485760,
+        "dataSha256": "0b692730f9707139fd86d1c1e3a7d63a3f7cb0702278975fa99df90883aab508"
+      },
+      {
+        "address": "pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA",
+        "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+        "executable": true,
+        "bytes": 36,
+        "dataSha256": "8a28beaa6366bb6236a8b455b61b280f430b4da6583becf73fd229886844e0da"
+      },
+      {
+        "address": "6naEzKeUuFh1Jeeu51NXQgr5qkXgXtc9WKNct4xynVJc",
+        "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+        "executable": false,
+        "bytes": 10485760,
+        "dataSha256": "e3d3be2256841163ba89b6184c2cc90ca1700c820bf887e5bb58b0aa668f5840"
+      },
+      {
+        "address": "pfeeUxB6jkeY1Hxd7CsFCAjcbHA9rWtchMGdZ6VojVZ",
+        "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+        "executable": true,
+        "bytes": 36,
+        "dataSha256": "cc9077315efa761cfe0b52aae08678ccda2a07e0fa2b374c98a1d51a1b4ce079"
+      },
+      {
+        "address": "75Uu23mqWBb8LM8vDppqC1mQAnCcBuLXhVaDezVMQLRw",
+        "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+        "executable": false,
+        "bytes": 948989,
+        "dataSha256": "3cf9ee9a380c0ced31171802d402551910ceb8c4819ede4ef44aaf63a12dbfac"
+      },
+      {
+        "address": "VRFzZoJdhFWL8rkvu87LpKM3RbcVezpMEc6X5GVDr7y",
+        "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+        "executable": true,
+        "bytes": 36,
+        "dataSha256": "e17e9c5e00989949b421465b42034f91e0ead62c0cff3e12f992c2b8034804bb"
+      },
+      {
+        "address": "91JpgS1vZUPczygkLgNQQL7tzAWUvc7M7HHVEzi8LoPV",
+        "owner": "BPFLoaderUpgradeab1e11111111111111111111111",
+        "executable": false,
+        "bytes": 664749,
+        "dataSha256": "dd2e2e10f3a0a1d475a5d905e526dd57a436282f9b8ff6260df06fbc84ac2816"
+      }
+    ],
+    "approvalMessageSha256": [
+      "3c2a3e86f18c4fc691285930fa953a42aa6a23dde175f49d616e3fe9d11917c0",
+      "0a4438e18d63d52c002fde0aecc2de1cb2b6daf9aa0e9bc035cd9796aac7aef8"
+    ]
+  },
+  "automationExternalSpentLamports": 0,
+  "shutdownRecovery": {
+    "destination": "9vTBKH79nsZ8fwLhLRPAjECKk4mASTa5mwUPkNpAjtRE",
+    "includeAutomationRemainder": true,
+    "automationInitialFundingLamports": "20000000",
+    "automationGasSpentIsNonrefundable": true,
+    "settlePlayerLiabilitiesFirst": true,
+    "stopAndDrainWorkerBeforeSweep": true,
+    "preserveProgramDepositByDefault": true
+  },
+  "randomnessRole": "Unused compatibility identity; ORAO requests are derived separately per batch",
+  "jackpotSymbol": "Gold Solana symbol from the owner-supplied logo",
+  "oraoProbe": {
+    "enabled": true
+  }
+}

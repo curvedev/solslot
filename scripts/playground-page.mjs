@@ -1,0 +1,45 @@
+import { Window } from 'happy-dom';
+// Reuse the approved layout and artwork, with a separate chain entry point.
+export function playgroundPage(html) {
+ const w=new Window({settings:{disableCSSFileLoading:true,disableJavaScriptFileLoading:true}}),d=w.document;
+ d.write(html);const $=id=>d.getElementById(id);
+ d.querySelector('script[type="module"]').src='./playground-live.js';
+ const csp=d.querySelector('[http-equiv="Content-Security-Policy"]');csp.content=csp.content.replace('https://api.coinbase.com','https://api.devnet.solana.com wss://api.devnet.solana.com');
+ d.querySelector('meta[name="description"]').content='SolSlot on Solana devnet. Play the on-chain test game with valueless test tokens.';
+ const css=d.createElement('link');css.rel='stylesheet';css.href='./playground-live.css';d.head.append(css);
+ d.title='SolSlot · Play on devnet';d.body.dataset.network='devnet';
+ for(const selector of ['.demo-controls','.treasury-panel','.preview-celebrations','.small-actions','#page-lab','#reset-dialog','.outcomes-panel','.footer-token'])d.querySelector(selector)?.remove();
+ for(const a of d.querySelectorAll('a[href="#lab"],a[href="./concepts/index.html"]'))a.remove();
+ $('prepaid-actions').hidden=false;$('prepaid-actions').classList.add('is-empty');$('prepaid-actions').setAttribute('aria-hidden','true');
+ d.querySelector('.summary-demo').before($('prepaid-actions'));
+ $('autoplay-toggle').remove();$('autoplay-status').textContent='Refresh stops the sequence. Unplayed credits stay available.';
+ const stop=d.createElement('button');stop.id='batch-stop';stop.type='button';stop.className='text-button';stop.disabled=true;stop.textContent='Skip animations';$('autoplay-status').before(stop);
+ const results=d.createElement('ol');results.id='batch-results';results.className='batch-results';results.hidden=true;results.setAttribute('aria-label','Results of each spin');$('outcome-amount').after(results);
+ d.querySelector('.demo-label').textContent='ON-CHAIN TEST GAME';
+ d.querySelector('.machine-display-heading').textContent='CURRENT JACKPOT · DEVNET';
+ d.querySelector('.machine-jackpot-display').setAttribute('aria-label','Current devnet jackpot');
+ $('machine-jackpot').textContent='—';$('machine-jackpot-usd').textContent='TEST SOL';$('machine-quote-label').textContent='No cash value';
+ d.querySelector('.machine-burn-scope').innerHTML='ON CHAIN<br>ALL PLAYERS';
+ d.querySelector('.playground-rewards').setAttribute('aria-label','Your devnet rewards and session');
+ d.querySelector('.summary-demo').textContent='DEVNET ONLY · NO REAL MONEY';
+ d.querySelector('#summary-session > .tiny-label').textContent='YOUR TEST WALLET';
+ d.querySelector('.summary-sol > span').textContent='SOL ready to claim';
+ d.querySelector('.session-console > div > .tiny-label').textContent='YOUR TEST TOKEN BALANCE';
+ $('balance').textContent='Connect your wallet';$('summary-balance').textContent='—';
+ $('result-title').textContent='Loading the test game…';$('result-detail').textContent='Connect your Solana wallet on Devnet. Only test funds are used.';
+ $('price-status').textContent='Devnet SOL and tokens have no cash value. This test pot was seeded with free devnet SOL.';
+ $('reward-claimed').textContent='Both token and SOL rewards stay reserved until claimed.';
+ $('burn-counter-note').textContent='Confirmed total burned by the deployed game.';$('burn-counter-mode').textContent='ON CHAIN';
+ d.querySelector('.rewards-page .page-heading p').textContent='Claim test tokens and SOL earned on chain. Return unused credits from Play.';
+ d.querySelector('#page-fairness .mode-label').textContent='ON-CHAIN TEST RULES';
+ $('fairness-content').innerHTML='<section class="info-panel"><h2>Same game. Real test transactions.</h2><p>Each spin commits 200,000 test tokens before the oracle reveals its result. There is a 1% jackpot chance, a 20% chance of 100,000 tokens back, and a 79% chance of no match. Token burns happen when the accepted spin settles.</p><p>A pack reserves its entries with one wallet approval. One oracle request then settles the results together before the reels play back to back. Refresh skips the animations and restores the accepted results and rewards. The first jackpot ends the pack and returns later unused entries as refundable credits. The site cannot replace an accepted draw. Unclaimed prizes and unused prepaid tokens stay reserved.</p><p>This is Solana devnet: all balances have no cash value. The pump.fun token and mainnet game have not launched. PumpSwap graduation and creator-fee collection remain production setup work.</p><p>Only one spin or pack can be pending at a time. A stalled oracle can delay play and recovery. Mainnet remains disabled while this recovery path is reviewed.</p></section>';
+ d.querySelector('#page-fairness .spaced').remove();
+ d.querySelector('.fee-intro p').textContent='At launch, 90% of the creator fees we actually receive from pump.fun and the canonical PumpSwap pool will fund the jackpot; 10% goes to treasury. pump.fun sets the fee schedule, which can change. Unrelated pools do not fund the game.';
+ d.querySelector('footer p').innerHTML='A little spin. A big moment.<br><small>Solana devnet · Test funds only</small>';
+ d.querySelector('.outcome-demo').textContent='SLOT · DEVNET';
+ d.querySelector('#wallet-dialog > p').textContent='Choose your Solana wallet and select Devnet. Connecting shares your public address. Approve a pack once to play its spins automatically.';
+ $('wallet-heading').textContent='Connect to the test game';
+ const note=d.createElement('section');note.className='chain-toolbar';note.innerHTML='<strong>DEVNET · TEST FUNDS ONLY</strong><span id="network-status" role="status">Loading chain state…</span><button id="chain-refresh" class="text-button" type="button">Refresh</button><button id="chain-receipt" class="text-button" type="button" hidden>Check transaction</button><a href="./demo.html">Try without a wallet ↗</a>';
+ d.querySelector('.site-header').after(note);
+ return '<!doctype html>\n'+d.documentElement.outerHTML;
+}
