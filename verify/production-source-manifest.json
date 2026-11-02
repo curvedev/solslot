@@ -12,7 +12,7 @@
   {
     "path": "config/mainnet.prepared.json",
     "bytes": 6772,
-    "sha256": "6084f3ffd91a11b23475fa86efdfc77cb06ce8c2e0156b9ec4ad6b2cfef7282f"
+    "sha256": "f437bf3b96ac559ae164aa2fb3daebc99758e5fd924d12f1f73ff5376221e070"
   },
   {
     "path": "Dockerfile",

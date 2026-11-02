@@ -1,7 +1,7 @@
 {
-  "snapshotCheckedAt": "2026-10-27T03:56:42.444Z",
+  "snapshotCheckedAt": "2026-11-02T13:50:17.899Z",
   "website": "https://solslot.fun",
-  "launchReviewId": "3301382abb602b2217594eff23996bc0da0495a5348a8f5cdbf083a1e82053fa",
+  "launchReviewId": "0fea58d28d191880d592f54eae888b744ec8e27d040831d2601ee8871fc84c9d",
   "gameProgram": "BBHgCoTRcop7txYHAAyBNvv5cVmVATppvFfaTXkp9QL9",
   "plannedMint": "FuuTBe4PPsWH57Z6HfqxxMHPUuiHefd7WKUcLcz1SLoT",
   "mintExistedAtCheck": false,
@@ -34,5 +34,6 @@
   },
   "independentAudit": false,
   "reproducibleBinaryBuildProven": false,
-  "note": "A health request is not a player entry or a player payout. On-chain state can change after this snapshot."
+  "note": "A health request is not a player entry or a player payout. On-chain state can change after this snapshot.",
+  "oracleUpgradeReview": "oracle-upgrade-review-2026-11-02.json"
 }

@@ -1,0 +1,48 @@
+{
+  "checkedAt": "2026-11-02T13:50:17.899Z",
+  "scope": "ORAO program compatibility review after an upstream upgrade; not an independent audit",
+  "program": "VRFzZoJdhFWL8rkvu87LpKM3RbcVezpMEc6X5GVDr7y",
+  "programData": "91JpgS1vZUPczygkLgNQQL7tzAWUvc7M7HHVEzi8LoPV",
+  "upgradeSlot": 464295482,
+  "upgradeAuthority": "9ZTHWWZDpB36UFe1vszf2KEpt83vwi27jDqtHQ7NSXyR",
+  "programDataSha256": "af35793f2b56a750d00e4121cd7c1784a083ad50fb1923223bbba112cb3c45e8",
+  "payloadSha256": "fe879afa2f899ad0fa2efbc876bccfea0529d89df4c1d46963292f9e05675330",
+  "priorRehearsalUpgradeAuthorityMatches": true,
+  "networkRequestFeeLamports": "500000",
+  "fulfillmentAuthorities": [
+    "9ZTHWWZDpB36UFe1vszf2KEpt83vwi27jDqtHQ7NSXyR",
+    "2VYNr8yMma4KkJLFNiipUxQYbg1fsyao2H6YQfZ1H2Xi",
+    "A9iZdgYabRLeAFEwss72eQr8wWQfZ6hLRmDLtWyxKvKj"
+  ],
+  "localCompatibility": {
+    "passed": 16,
+    "checks": [
+      "dedicated health request is fulfilled by real ORAO code; finalized rent refund and bounded net cost match",
+      "1-spin purchase and fresh request commit atomically with one wallet signer",
+      "pending pack cannot reroll, double-purchase or settle before fulfillment",
+      "actual ORAO program rejects an unauthorized proof and requires the full three-node quorum",
+      "restart settlement uses the original durable result, burns correctly and cannot pay twice",
+      "5-spin purchase and fresh request commit atomically with one wallet signer",
+      "pending pack cannot reroll, double-purchase or settle before fulfillment",
+      "actual ORAO program rejects an unauthorized proof and requires the full three-node quorum",
+      "restart settlement uses the original durable result, burns correctly and cannot pay twice",
+      "10-spin purchase and fresh request commit atomically with one wallet signer",
+      "pending pack cannot reroll, double-purchase or settle before fulfillment",
+      "actual ORAO program rejects an unauthorized proof and requires the full three-node quorum",
+      "restart settlement uses the original durable result, burns correctly and cannot pay twice",
+      "pre-requested known results are rejected on chain and the token purchase rolls back",
+      "oracle migration is impossible after activation or player admission",
+      "DEV shutdown remains available and preserves claimable player rewards"
+    ],
+    "execution": "Exact deployed ORAO ELF on a disposable localhost validator with test quorum keys and local currency; validator default feature set, not a mainnet feature-set clone"
+  },
+  "liveProviderLiveness": {
+    "checkedAt": "2026-11-02T13:41:22.665Z",
+    "result": "recent-live-fulfillment-verified"
+  },
+  "savedFeeMessagesUnchanged": true,
+  "gameProgramBinaryUnchanged": true,
+  "transactionsSubmitted": 0,
+  "realSolSpent": 0,
+  "launchReviewId": "0fea58d28d191880d592f54eae888b744ec8e27d040831d2601ee8871fc84c9d"
+}
