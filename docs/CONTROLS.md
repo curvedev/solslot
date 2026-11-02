@@ -1,8 +1,6 @@
 # Operator controls and trust assumptions
 
-The program is upgradeable. Its DEV upgrade authority can replace the deployed program; reviewing this source snapshot does not prove that future code will retain these protections. Compare the current program data and binary hash independently.
-
-In the published implementation, the DEV wallet can permanently close the current game to new entries and recover the unallocated pot and excess SOL. The shutdown instruction reserves rent, recorded SOL reward liabilities and the pot already locked for a pending pack. It does not authorize withdrawing a player's recorded rewards. Claims, accepted-result settlement and unused-credit recovery remain separate operations. Final account retirement requires closure, no open player/oracle accounts, no pending pack and no protected SOL or token liabilities.
+The DEV retains upgrade authority and can close the game and recover unallocated funds. The current code reserves recorded player obligations.
 
 The DEV owns a dedicated wrapped-SOL creator-fee account. Only that account is delegated to the game for fee ingestion; this is not delegation of the DEV wallet. Closing the game changes future fee ingestion behavior so recoverable funds can be returned to the DEV.
 
